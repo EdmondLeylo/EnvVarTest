@@ -1,2 +1,2 @@
-del Web.config
-ren Web.%1.config Web.config
+del qwerty/Web.config
+ren qwerty/Web.%1.config qwerty/Web.config
