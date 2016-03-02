@@ -27,7 +27,6 @@
 <setParameter name="Steam Service Endpoint Address" value="http://intpmpwsvip.corp.gmi.lcl:8083"/>
 <setParameter name="Steam Quota Service Endpoint Address" value="http://intpmpwsvip.corp.gmi.lcl:8097" />
 <setParameter name="Steam Expression Service Endpoint Address" value="http://intpmpwsvip.corp.gmi.lcl:8084" />
-<setParameter name="PMP Service Endpoint Address" value="http://intpmpwsvip.corp.gmi.lcl:8083/"/>
 <setParameter name="GMI Study Endpoint Address" value="http://intnetmrwsvip.asp.gmi.lcl/Setsampler/api/netmr/study.php"/>
 <setParameter name="Quota Cells Endpoint Address" value="http://intnetmrwsvip.asp.gmi.lcl/Setsampler/api/livematch/quota.php"/>
 <setParameter name="HB User Endpoint Address" value="http://inthbweb02.corp.gmi.lcl/api/user.php"/>
