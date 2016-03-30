@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <type>
+    <name>Numeric Operators</name>
+    <references>
+      <reference
+        id="0"
+        Name="FUNC_AGE "
+        Description="Returns the age in years as an int"
+        Parameters="Long"
+        ReturnValue="Int"
+        ShowInFAQPage="True"
+    />
+
+    <reference
+      id="1"
+      Name="FUNC_AGEMONTH  "
+      Description="Returns the age in months as an int"
+      Parameters="Long"
+      ReturnValue="Int"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="2"
+      Name="LOOKUP "
+      Description="Returns the index of the left parameter in the right parameter array as an int"
+      Parameters="(T, Array[A]) "
+      ReturnValue="Int"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="3"
+      Name="LOOKUP_INT_MATRIX  "
+      Description="TODO"
+      Parameters="(Array[Int], Array[Int])"
+      ReturnValue="Int"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="4"
+      Name="SUM  "
+      Description="Returns the sum of an array of integers"
+      Parameters="[Int] "
+      ReturnValue="Int"
+      ShowInFAQPage="True"
+    />
+    </references>
+  </type>
+  <type>
+    <name>String Operators</name>
+    <references>
+    <reference
+      id="5"
+      Name="CONCAT"
+      Description="Concatenates the string parameters"
+      Parameters="[String]"
+      ReturnValue="String"
+      ShowInFAQPage="True"
+    />
+    
+    <reference
+      id="6"
+      Name="LOWERCASE"
+      Description="Returns a copy of the string parameter in lowercase"
+      Parameters="String"
+      ReturnValue="String"
+      ShowInFAQPage="True"
+    />
+    
+    <reference
+      id="7"
+      Name="UPPERCASE"
+      Description="Returns a copy of the string parameter in uppercase"
+      Parameters="String"
+      ReturnValue="String"
+      ShowInFAQPage="True"
+    />
+    </references>
+  </type>
+  <type>
+    <name>Literals</name>
+    <references>
+    <reference
+      id="8"
+      Name="BOOL"
+      Description="Declares a bool literal"
+      Parameters="Bool"
+      ReturnValue=""
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="9"
+      Name="DATE"
+      Description="Declares a date literal"
+      Parameters="Date"
+      ReturnValue=""
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="10"
+      Name="INT"
+      Description="Declares an integer literal"
+      Parameters="Int"
+      ReturnValue=""
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="11"
+      Name="STRING"
+      Description="Declares an string literal"
+      Parameters="String"
+      ReturnValue=""
+      ShowInFAQPage="True"
+    />
+    </references>
+  </type>
+  <type>
+    <name>Expression References</name>
+    <references>
+    <reference
+      id="12"
+      Name="BOOL_ARRAY_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be an array of bools"
+      Parameters="expressionId"
+      ReturnValue="Array[Bool]"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="13"
+      Name="BOOL_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be a bool"
+      Parameters="expressionId"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="14"
+      Name="DATE_ARRAY_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be an array of dates"
+      Parameters="expressionId"
+      ReturnValue="Array[Long]"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="15"
+      Name="DATE_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be a date"
+      Parameters="expressionId"
+      ReturnValue="Long"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="16"
+      Name="INT_ARRAY_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be an array of ints"
+      Parameters="expressionId"
+      ReturnValue="Array[Int]"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="17"
+      Name="INT_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be an integer"
+      Parameters="expressionId"
+      ReturnValue="String"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="18"
+      Name="STRING_ARRAY_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be an array of strings"
+      Parameters="expressionId"
+      ReturnValue="Array[String]"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="19"
+      Name="STRING_EXPRESSION_REF"
+      Description="Evaluates an expression specified by ID and expects the result to be a string"
+      Parameters="expressionId"
+      ReturnValue="String"
+      ShowInFAQPage="True"
+    />
+    </references>
+  </type>
+  <type>
+    <name>Boolean Operators</name>
+    <references>
+    <reference
+      id="20"
+      Name="ALL_OF"
+      Description="Returns true if all of the values in the left parameter array are in the right parameter array."
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="21"
+      Name="AND"
+      Description="Returns the logical and of 1 or more parameters"
+      Parameters="[Bool]"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="22"
+      Name="ANY_OF"
+      Description="Returns true if any of the values in the left parameter array are in the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="23"
+      Name="BETWEEN"
+      Description="Returns a bool if the left parameter is greater that the first value of the right parameter array and less than the second value of the right parameter array"
+      Parameters="([ Int| Long| Bool| String], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="24"
+      Name="CONTAINS"
+      Description="Returns a bool if the right parameter array contains the left parameter"
+      Parameters="(T, Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="25"
+      Name="EQUALS"
+      Description="Returns true if the left integer is equal to the right"
+      Parameters="([ Int| Long| Bool| String], T) "
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="26"
+      Name="EQUAL_NUMERIC"
+      Description="Returns true if the left integer is equal to the right"
+      Parameters="(Int, Int)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="27"
+      Name="EXACTLY"
+      Description="Returns true if the left parameter array equals the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="28"
+      Name="FUNC_ISNOTNULL"
+      Description="Returns false if evaluating the parameter tries to lookup an attribute that doesn't exist"
+      Parameters="T"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="29"
+      Name="FUNC_ISNULL"
+      Description="Returns true if evaluating the parameter tries to lookup an attribute that doesn't exist"
+      Parameters="T"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="30"
+      Name="GREATERTHAN"
+      Description="Returns true if the left integer is greater than the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="31"
+      Name="GREATERTHANEQUAL"
+      Description="Returns true if the left integer is greater than or equal to the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="32"
+      Name="LESSTHAN"
+      Description="Returns true if the left integer is less than the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="33"
+      Name="LESSTHANEQUAL"
+      Description="Returns true if the left integer is less than or equal the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="34"
+      Name="NONE_OF"
+      Description="Returns true if none of the values in the left parameter array are in the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="35"
+      Name="NOT"
+      Description="Returns the logical not of the parameter"
+      Parameters="Bool"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="36"
+      Name="NOT_EQUAL_NUMERIC"
+      Description="Returns true if the left integer is not equal to the right"
+      Parameters="(Int, Int)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="37"
+      Name="NOT_EXACTLY"
+      Description="Returns true if the left parameter array is not equal to the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="38"
+      Name="ONLY_OF"
+      Description="Returns true if only values in the left parameter array are in the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="39"
+      Name="OR"
+      Description="Returns the logical or of 1 or more parameters"
+      Parameters="[Bool]"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="40"
+      Name="STRING_LIKE"
+      Description="Returns true if left string and right string are equal"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="41"
+      Name="STRING_REGEXP"
+      Description="Returns true if left string and right string are equal"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+    </references>
+  </type>
+  <type>
+  <name>Attribute References</name>
+    <references>
+  <reference
+    id="42"
+    Name="BOOL_ARRAY_ATTRIBUTE"
+    Description="Looks up an attribute and expects it to be an array of bools"
+    Parameters="attributeId"
+    ReturnValue="Array[Bool]"
+    ShowInFAQPage="True"
+  />
+
+   <reference
+     id="43"
+     Name="BOOL_ATTRIBUTE"
+     Description="Looks up an attribute and expects it to be a bool"
+     Parameters="attributeId"
+     ReturnValue="Bool"
+     ShowInFAQPage="True"
+  />
+
+   <reference
+      id="44"
+      Name="DATE_ARRAY_ATTRIBUTE"
+      Description="Looks up an attribute and expects it to be an array of dates"
+      Parameters="attributeId"
+      ReturnValue="Array[Long]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+       id="45"
+       Name="DATE_ATTRIBUTE"
+       Description="Looks up an attribute and expects it to be a date"
+       Parameters="attributeId"
+       ReturnValue="Long"
+       ShowInFAQPage="True"
+  />
+
+    <reference
+       id="46"
+       Name="INT_ARRAY_ATTRIBUTE"
+       Description="Looks up an attribute and expects it to be an array of ints"
+       Parameters="attributeId"
+       ReturnValue="Array[Int]"
+       ShowInFAQPage="True"
+  />
+
+    <reference
+       id="47"
+       Name="INT_ATTRIBUTE"
+       Description="Looks up an attribute and expects it to be an integer"
+       Parameters="attributeId"
+       ReturnValue="Int"
+       ShowInFAQPage="True"
+  />
+
+    <reference
+       id="48"
+       Name="STRING_ARRAY_ATTRIBUTE"
+       Description="Looks up an attribute and expects it to be an array of strings"
+       Parameters="attributeId"
+       ReturnValue="Array[String]"
+       ShowInFAQPage="True"
+  />
+
+    <reference
+       id="49"
+       Name="STRING_ATTRIBUTE"
+       Description="Looks up an attribute and expects it to be a string"
+       Parameters="attributeId"
+       ReturnValue="String"
+       ShowInFAQPage="True"
+  />
+    </references>
+  </type>
+  <type>
+    <name>Other Operators</name>
+    <references>
+    <reference
+      id="50"
+      Name="ARRAY_SWITCH"
+      Description="Returns all values from the right parameter array where the expression with the same index on the left parameter array is true"
+      Parameters="(Array[Bool], Array[A])"
+      ReturnValue="Array[A]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="51"
+      Name="COMMENT"
+      Description="Noop to hold comments about underlying expression structure or intent"
+      Parameters="(T, String)"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="52"
+      Name="EXCEPTION"
+      Description="Returns the value of the right expression if the left throws an out of bounds exception"
+      Parameters="(T, T)"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="53"
+      Name="HANDLE_ATTRIBUTEMISSING"
+      Description="Returns the value of the right expression if the left causes an exeception"
+      Parameters="(T, T)"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="54"
+      Name="HANDLE_ATTRIBUTEMISSING_NOT"
+      Description="Placeholder operator for internal use during currying calculations"
+      Parameters="(T, T)"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="55"
+      Name="HANDLE_INDEXOUTOFBOUNDS"
+      Description="Returns the value of the right expression if the left throws an out of bounds exception"
+      Parameters="(T, T)"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="56"
+      Name="HEAD"
+      Description="Returns the first value of the parameter array"
+      Parameters="Array[A]"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="57"
+      Name="INDEX"
+      Description="Returns the value from the right array parameter at the index provided by the left parameter int"
+      Parameters="(Int, Array[A])"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="58"
+      Name="SWITCH"
+      Description="Returns the first value from the right parameter array where the expression with the same index on the left parameter array is true. Otherwise returns the value of the last expression from the right parameter array"
+      Parameters="(Array[Bool], Array[A])"
+      ReturnValue=" T"
+      ShowInFAQPage="True"
+  />
+    </references>
+  </type>
+  <type>
+    <name>Array Literals</name>
+    <references>
+    <reference
+      id="59"
+      Name="ARRAY"
+      Description="Declares an array literal that contains a mixture of types"
+      Parameters="[T]"
+      ReturnValue="Array[A]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="60"
+      Name="BOOL_ARRAY"
+      Description="Declares a bool array literal"
+      Parameters="[Bool]"
+      ReturnValue="Array[Bool]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="61"
+      Name="DATE_ARRAY"
+      Description="Declares a date array literal"
+      Parameters="[Long]"
+      ReturnValue="Array[Bool]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="62"
+      Name="INT_ARRAY"
+      Description="Declares an int array literal"
+      Parameters="[Int]"
+      ReturnValue="Array[Int]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="63"
+      Name="PAR_ARRAY"
+      Description="Declares an array literal that contains a mixture of types"
+      Parameters="[T]"
+      ReturnValue="Array[A]"
+      ShowInFAQPage="True"
+  />
+
+    <reference
+      id="64"
+      Name="STRING_ARRAY"
+      Description="Declares a string array literal"
+      Parameters="[String]"
+      ReturnValue="Array[String]"
+      ShowInFAQPage="True"
+  />
+    </references>
+  </type>
+</root>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  
+  <type>
+    <name>Boolean Operators</name>
+    <references>
+    <reference
+      id="1"
+      Name="ALL"
+      Description="Returns true if all of the values in the left parameter array are in the right parameter array."
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="2"
+      Name="AND"
+      Description="Returns the logical and of 1 or more parameters"
+      Parameters="[Bool]"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="3"
+      Name="ANY"
+      Description="Returns true if any of the values in the left parameter array are in the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="4"
+      Name="BETWEEN"
+      Description="Returns a bool if the left parameter is greater that the first value of the right parameter array and less than the second value of the right parameter array"
+      Parameters="([ Int| Long| Bool| String], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="5"
+      Name="EQUALS"
+      Description="Returns true if the left integer is equal to the right"
+      Parameters="([ Int| Long| Bool| String], T) "
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="6"
+      Name="EXACTLY"
+      Description="Returns true if the left parameter array equals the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="7"
+      Name="GREATERTHAN"
+      Description="Returns true if the left integer is greater than the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="8"
+      Name="GREATERTHANOREQUAL"
+      Description="Returns true if the left integer is greater than or equal to the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="9"
+      Name="LESSTHAN"
+      Description="Returns true if the left integer is less than the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="10"
+      Name="LESSTHANOREQUAL"
+      Description="Returns true if the left integer is less than or equal the right"
+      Parameters="([ Int| Long| Bool| String], T)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="11"
+      Name="NONE"
+      Description="Returns true if none of the values in the left parameter array are in the right parameter array"
+      Parameters="(Array[A], Array[A])"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="12"
+      Name="NOT"
+      Description="Returns the logical not of the parameter"
+      Parameters="Bool"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="13"
+      Name="OR"
+      Description="Returns the logical or of 1 or more parameters"
+      Parameters="[Bool]"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="14"
+      Name="LIKE"
+      Description="Returns true if left string and right string are equal"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+    
+    <reference
+      id="15"
+      Name="IN"
+      Description="IN description"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="16"
+      Name="LIST"
+      Description="LIST description"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+
+    <reference
+      id="17"
+      Name="ONLY"
+      Description="ONLY description"
+      Parameters="(String, String)"
+      ReturnValue="Bool"
+      ShowInFAQPage="True"
+    />
+  </references>
+</type> 
+</root>
