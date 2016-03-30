@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <parameters>
+<setParameter name="Environment" value="INT" />
 <setParameter name="KikaiDB-Web.config Connection String" value="Data Source=offer-dev.ckd0hhd5vffe.us-west-2.rds.amazonaws.com; Initial Catalog=OfferDB-INT;Integrated Security=False;User ID=odbUser;Password=Fp8790eMrtb9qag;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True" />
 <setParameter name="Offer Link Base URL" value="https://inthub.globaltestmarket.com/hub/tplm/welcome" />
 <setParameter name="OfferService Admin Username" value="osadmin" />
@@ -30,14 +31,15 @@
 <setParameter name="GMI Study Endpoint Address" value="http://intnetmrwsvip.asp.gmi.lcl/Setsampler/api/netmr/study.php"/>
 <setParameter name="Quota Cells Endpoint Address" value="http://intnetmrwsvip.asp.gmi.lcl/Setsampler/api/livematch/quota.php"/>
 <setParameter name="HB User Endpoint Address" value="http://inthbweb02.corp.gmi.lcl/api/user.php"/>
+<setParameter name="OfferService Endpoint Address" value="http://offerservice-int.elasticbeanstalk.com" />
 <setParameter name="SNMP Agent" value="intjq02.corp.gmi.lcl"/>
 <setParameter name="File Log Level" value="DEBUG"/>
 <setParameter name="Monitor Log Level" value="DEBUG"/>
-<setParameter name="Active Offers Job Retry Minutes" value="1" />
+<setParameter name="Active Offers Job Retry Minutes" value="10" />
 <setParameter name="Pending Offers Job Retry Minutes" value="5" />
 <setParameter name="Pending Offers Job Max Retries" value="1" />
-<setParameter name="Suspended Offers Job Retry Minutes" value="1" />
-<setParameter name="Inactive Offers Job Retry Minutes" value="60" />
+<setParameter name="Suspended Offers Job Retry Minutes" value="60" />
+<setParameter name="Inactive Offers Job Retry Minutes" value="1440" />
 <setParameter name="Inactive Offers Job Max Inactive Days" value="365" />
 <setParameter name="Custom Errors Mode" value="Off" />
 <setParameter name="SMTP Mail Server" value="corp-mx.asp.gmi.lcl" />

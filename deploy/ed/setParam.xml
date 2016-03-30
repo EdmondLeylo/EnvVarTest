@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <parameters>
-<setParameter name="KikaiDB-Web.config Connection String" value="Data Source=EDMOND-PC\edmond; Initial Catalog=OffersII;Integrated Security=False;User ID=sa;Password=leylo09;Connect Timeout=15;Encrypt=False;TrustServerCertificate=True" />
+<setParameter name="KikaiDB-Web.config Connection String" value="Data Source=EDMOND-PC\edmond; Initial Catalog=OffersII;Integrated Security=False;User ID=sa;Password=leylo09;Connect Timeout=17;Encrypt=False;TrustServerCertificate=True" />
 <setParameter name="Offer Link Base URL" value="https://devhub.globaltestmarket.com/hub/tplm/welcome" />
 <setParameter name="OfferService Admin Username" value="osadmin" />
-<setParameter name="OfferService Admin Password" value="offerservice@dev" />
+<setParameter name="OfferService Admin Password" value="offerservice@local" />
 <setParameter name="Portal Superuser Username" value="osadmin" />
-<setParameter name="Portal Superuser Password" value="offerservice@dev"/>  
+<setParameter name="Portal Superuser Password" value="offerservice@local"/>
 <setParameter name="PMP Store Server" value="devcatdb02.corp.gmi.lcl" />
 <setParameter name="PMP Store DB" value="webservice" />
 <setParameter name="PMP Store Username" value="developer" />
@@ -16,20 +16,20 @@
 <setParameter name="UPDATESAMPLEOFFERSERVICEONLYIND timeout in seconds" value="2" />
 <setParameter name="Offer Service API User" value="OfferService" />
 <setParameter name="Offer Service APIUser password" value="#@y^77*YQ][yet$" />
-<setParameter name="Offer Service APIUser key" value="sk55d38d036741e" />
+<setParameter name="Offer Service APIUser key" value="sk55d38d036741e" />  
 <setParameter name="LiveMatchHistory Endpoint Address" value="http://devvpdsws01.corp.gmi.lcl/LiveMatchHistory/LiveMatchHistory.ashx"/>
 <setParameter name="LiveMatch Endpoint Address" value="http://devvpdsws01.corp.gmi.lcl/LiveMatch/LiveMatch.ashx"/>
 <setParameter name="Respondent Catalog Endpoint Address" value="http://devnetmrvip.corp.gmi.lcl/Setsampler/api/thirdparty/respondent.php"/>
 <setParameter name="MS Providers Endpoint Address"   value="http://devnetmrwsvip.asp.gmi.lcl/Setsampler/api/css/provider.php"/>
-<setParameter name="HB OfferService Endpoint Address"   value="http://devhbweb01.corp.gmi.lcl/api/offerservice.php"/>
+<setParameter name="HB OfferService Endpoint Address"   value="http://172.17.1.200/api/offerservice.php"/>
 <setParameter name="MS Providers Check Interval" value="1"/>
 <setParameter name="Sample Manager Endpoint Address" value="http://devvpdsws01.corp.gmi.lcl/SampleManager/SampleManager.ashx"/>
 <setParameter name="Steam Service Endpoint Address" value="http://devpmpwsvip.corp.gmi.lcl:8083" />
-<setParameter name="PMP Service Endpoint Address" value="http://devpmpwsvip.corp.gmi.lcl:8083/" />
-<setParameter name="Steam Quota Service Endpoint Address" value="http://devpmpwsvip.corp.gmi.lcl:8097" />
+<setParameter name="Steam Quota Service Endpoint Address" value="http://devpmpwsvip.corp.gmi.lcl:8097" /> 
+<setParameter name="Steam Expression Service Endpoint Address" value="http://devpmpwsvip.corp.gmi.lcl:8084" />
 <setParameter name="GMI Study Endpoint Address" value="http://devnetmrwsvip.asp.gmi.lcl/Setsampler/api/netmr/study.php" />
 <setParameter name="Quota Cells Endpoint Address" value="http://devnetmrwsvip.asp.gmi.lcl/Setsampler/api/livematch/quota.php" />
-<setParameter name="HB User Endpoint Address" value="http://devhbweb02.corp.gmi.lcl/api/user.php" />
+<setParameter name="HB User Endpoint Address" value="http://172.17.1.200/api/user.php" />
 <setParameter name="SNMP Agent" value="devmon01.corp.gmi.lcl"/>
 <setParameter name="File Log Level" value="DEBUG"/>
 <setParameter name="Monitor Log Level" value="DEBUG"/>
@@ -40,7 +40,7 @@
 <setParameter name="Inactive Offers Job Retry Minutes" value="60" />
 <setParameter name="Inactive Offers Job Max Inactive Days" value="15" />
 <setParameter name="Custom Errors Mode" value="Off" />
-<setParameter name="SMTP Mail Server" value="corp-mx.asp.gmi.lcl" />
+<setParameter name="SMTP Mail Server" value="mail.gotocme.com" />
 <setParameter name="SMTP Mail Server Port" value="25" />
 <setParameter name="SMTP Mail Server Username" value="" />
 <setParameter name="SMTP Mail Server Password" value="" />

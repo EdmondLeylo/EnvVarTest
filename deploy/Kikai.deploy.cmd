@@ -88,8 +88,12 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo :::::::::::: Done Upgrading the database to the latest version ::::::
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+echo "Ready to run the sanity check..."
 pause
 
+%HOME_DIR%SanityChecker\OfferServiceSanityChecker.exe -r -s %_DeploySetParametersFile%
+pause
 goto :END
 
 :SETOSENVPATH

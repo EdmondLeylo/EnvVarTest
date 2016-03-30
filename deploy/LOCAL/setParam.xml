@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <parameters>
-<setParameter name="KikaiDB-Web.config Connection String" value="Data Source=localhost; Initial Catalog=OffersII;Integrated Security=False;User ID=sa;Password=lightspeed;Connect Timeout=17;Encrypt=False;TrustServerCertificate=True" />
+<setParameter name="Environment" value="LOCAL" />
+<setParameter name="KikaiDB-Web.config Connection String" value="Data Source=172.17.2.187; Initial Catalog=OffersII;Integrated Security=False;User ID=sa;Password=lightspeed;Connect Timeout=17;Encrypt=False;TrustServerCertificate=True" />
 <setParameter name="Offer Link Base URL" value="https://devhub.globaltestmarket.com/hub/tplm/welcome" />
 <setParameter name="OfferService Admin Username" value="osadmin" />
 <setParameter name="OfferService Admin Password" value="offerservice@local" />
@@ -30,6 +31,7 @@
 <setParameter name="GMI Study Endpoint Address" value="http://devnetmrwsvip.asp.gmi.lcl/Setsampler/api/netmr/study.php" />
 <setParameter name="Quota Cells Endpoint Address" value="http://devnetmrwsvip.asp.gmi.lcl/Setsampler/api/livematch/quota.php" />
 <setParameter name="HB User Endpoint Address" value="http://172.17.1.200/api/user.php" />
+<setParameter name="OfferService Endpoint Address" value="http://localhost" />
 <setParameter name="SNMP Agent" value="devmon01.corp.gmi.lcl"/>
 <setParameter name="File Log Level" value="DEBUG"/>
 <setParameter name="Monitor Log Level" value="DEBUG"/>
